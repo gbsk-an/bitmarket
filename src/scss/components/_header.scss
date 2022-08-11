@@ -9,13 +9,12 @@
 }
 
 .menu-items {
-    @include flex-all-sb;
-    
+    @include flex-all-sb;    
 }
 
 .logo {
     @include flex-v-center;
-    &_title {
+    &__title {
         padding-left: 8px;
         color: var(--neutrals-7);
         font-size: 24px;
@@ -24,17 +23,17 @@
 }
 
 .nav {
-    &_menu {
+    &__list {
         @include flex-v-center;
     }
 
-    &_item {
+    &__item {
         &:not(:last-child) {
             margin-right: 48px;
         }
     }
 
-    &_link {
+    &__link {
         color: var(--neutrals-4);
         font-size: 14px;
         font-family: var(--font-family-DMSans);
@@ -46,31 +45,27 @@
     @include flex;
     justify-content: flex-end;
 
-    &_language {
+    &__language {
         margin-right: 8px;
     }
 
-    &_btn-lang-rate {
-        
+    &__btn-lang-rate {        
         padding: 12px 0 16px 12px;
         color: var(--neutrals-8);
         font-size: 14px;
         font-family: var(--font-family-DMSans);
     }
 
-    &_arrow {
+    &__arrow {
         
     }
 
-    &_sign-up-login {
+    &__sign-up-login {
         .sign-up {
+            @include blue-btn;
             margin-right: 8px;
-            padding: 12px 16px;
-            border-radius: 90px;
-            background-color: var(--primary-1);
-            color: var(--neutrals-8);
+            padding: 12px 16px;            
             font-size: 14px;
-            font-family: var(--font-family-DMSans);
         }
 
         .login {

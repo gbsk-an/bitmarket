@@ -90,3 +90,16 @@ $browser-context: 16; // Default
     content: "";
     display: block;
 }
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(12, 68px);
+  gap: 0px 32px;
+}
+
+@mixin blue-btn {
+  border-radius: 90px;
+  background-color: var(--primary-1);
+  color: var(--neutrals-8);
+  font-family: var(--font-family-DMSans);
+}
