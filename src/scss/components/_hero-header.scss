@@ -2,8 +2,9 @@
     @include grid;
 
     &__content {
+        z-index: -1;
         grid-column: 1 / 7;
-        margin-top: 161px;
+        margin-top: 161px;        
     }
 
     &__h1 {
@@ -23,11 +24,94 @@
     .start-now-button {
         @include blue-btn;
         padding: 16px 24px;
-        margin-bottom: 255px;
+        margin-bottom: 80px;
+    }
+
+    &__small-circle-button{
+        margin-bottom: 148px;
     }
 
     &__image {
         grid-column: 7 / 13;
+    }
+
+    &__img {
+        z-index: 1;
         width: 100%;
+        height: 115%;
     }
 }  
+
+.course-now {
+    @include grid;
+    border-radius: 24px;
+    background-color: var(--neutrals-2);
+    
+.blocks-hh {
+    margin: 24px;
+}
+
+    .blocks-hh:hover {
+        background-color: var(--neutrals-3);
+        box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
+        border-radius: 16px;
+        transition: 0.2s;
+    }
+
+    .coin-symbol {
+        margin-bottom: 16px;
+    }
+
+    &__block-1 {
+        grid-column: 1 / 4;
+        padding: 32px 60px 32px 32px;
+    }
+    &__block-2 {
+        grid-column: 4 / 7;
+        padding: 32px 60px 32px 32px;
+    }
+    &__block-3 {
+        grid-column: 7 / 10;
+        padding: 32px 60px 32px 32px;
+    }
+    &__block-4 {
+        grid-column: 10 / 13;
+        padding: 32px 60px 32px 32px;
+    }
+    &__coin-rate {         
+        @include flex-all-sb;
+        max-width: 131px;
+        margin: 0 0 6px;       
+    }
+    &__coin {
+        margin: 0;
+        color: var(--neutrals-4);
+        font-family: var(--font-family-Poppins-SB);
+        font-size: 12px;
+    }
+    &__rate,    
+    &__rate-btc {
+        margin: 0;
+        max-width: 58px;
+        padding: 2px 8px;
+        border-radius: 24px;
+        background-color: var(--primary-4);
+        color: var(--neutrals-8);
+        font-family: var(--font-family-Poppins-SB);
+        font-size: 12px;        
+    }
+    &__rate-btc {
+        background-color: var(--primary-3);
+    }
+    &__price{
+        margin-bottom: 4px;
+        color: var(--neutrals-8);
+        font-family: var(--font-family-Poppins-SB);
+        font-size: 24px;
+    }
+    &__price-little{
+        color: var(--neutrals-8);
+        font-family: var(--font-family-Poppins-Reg);
+        font-size: 12px;
+    }
+}
