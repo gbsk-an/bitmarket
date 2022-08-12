@@ -28,12 +28,8 @@
         grid-column: 11 / 13;   
 
         &__view-more {
+            @include btn-clear;
             padding: 16px 24px;
-            border: 2px solid #26282E;
-            border-radius: 90px;
-            color: var(--neutrals-8);
-            font-family: var(--font-family-DMSans);
-            font-size: 16px;
         }     
     }
 
@@ -45,12 +41,34 @@
     }
 
     &__h3 {
+        margin: 0;
         color: var(--neutrals-8);
         font-family: var(--font-family-DMSans);
         font-size: 32px;
     }
 
+    &__flex {
+        @include flex-all-sb;
+        margin-bottom: 16px;
+    }
+
     &__large {
         grid-column: 1 / 7;
+
+        &__picture {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__learn-more-btn {
+        @include btn-clear;
+        padding: 13px 28px 13px 24px;
+        margin-right: 23px;
+    }
+
+    &__p {
+        font-family: var(--font-family-Poppins-Reg);
+        color: var(--neutrals-4);
+        font-size: 16px;
     }
 }

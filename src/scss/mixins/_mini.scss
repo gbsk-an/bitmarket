@@ -103,3 +103,11 @@ $browser-context: 16; // Default
   color: var(--neutrals-8);
   font-family: var(--font-family-DMSans);
 }
+
+@mixin btn-clear {
+  border: 2px solid #26282E;
+  border-radius: 90px;
+  color: var(--neutrals-8);
+  font-family: var(--font-family-DMSans);
+  font-size: 16px;
+}
