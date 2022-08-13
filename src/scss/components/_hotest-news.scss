@@ -3,7 +3,7 @@
     margin-top: 136px;
 
     &__nav {
-        grid-column: 1 / 5;
+        grid-column: 4 span;
         margin-bottom: 80px
     }
 
@@ -25,7 +25,8 @@
     }
 
     &__btn {
-        grid-column: 11 / 13;   
+        grid-column: 11 / span 2;  
+        margin-left: 39px;
 
         &__view-more {
             @include btn-clear;
@@ -39,6 +40,10 @@
         font-family: var(--font-family-DMSans);
         font-size: 48px;
     }
+}
+
+.news-block {
+    @include grid;
 
     &__h3 {
         margin: 0;
@@ -53,22 +58,71 @@
     }
 
     &__large {
-        grid-column: 1 / 7;
+        grid-column: span 6;
 
         &__picture {
             margin-bottom: 40px;
+            width: 100%;
         }
     }
 
     &__learn-more-btn {
         @include btn-clear;
-        padding: 13px 28px 13px 24px;
-        margin-right: 23px;
+        position: relative;
+        padding: 13px 52px 13px 24px;
+    }
+
+    &__learn-more-btn::after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-image: url('../img/svg/arrow-right-simple.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);        
     }
 
     &__p {
         font-family: var(--font-family-Poppins-Reg);
         color: var(--neutrals-4);
         font-size: 16px;
+        line-height: 24px;
     }
+
+    &__mini {
+        grid-column: span 6 / 13;
+        margin-left: 5em;
+    }
+    &__post-flex {
+        display: flex;
+        justify-content: space-between;
+        &:not(:last-child) {
+            margin-bottom: 2em;
+        }
+    }
+
+
+    &__title {
+        margin-bottom: 1.1em;
+        color: var(--neutrals-8);
+        font-family: var(--font-family-Poppins-SB);
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__text,
+    &__date {
+        font-family: var(--font-family-Poppins-Reg);
+        color: var(--neutrals-4);
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__text {
+        margin-bottom: 6em;
+    }
+
 }

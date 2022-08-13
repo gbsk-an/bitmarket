@@ -93,8 +93,8 @@ $browser-context: 16; // Default
 
 @mixin grid {
   display: grid;
-  grid-template-columns: repeat(12, 68px);
-  gap: 0px 32px;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
 }
 
 @mixin blue-btn {
