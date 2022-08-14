@@ -1,0 +1,17 @@
+.become-trader {
+    @include grid;
+    margin-top: 136px;
+
+    &__title {
+        grid-column: 5 / 10;
+        text-align: center;
+    }
+
+    &__h2 {
+        @include h2;
+    }
+
+    &__p {
+        @include p;
+    }
+}

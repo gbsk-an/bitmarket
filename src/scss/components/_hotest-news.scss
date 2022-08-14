@@ -35,10 +35,8 @@
     }
 
     &__h2 {
+        @include h2;
         margin-bottom: 40px;
-        color: var(--neutrals-8);
-        font-family: var(--font-family-DMSans);
-        font-size: 48px;
     }
 }
 
@@ -86,10 +84,7 @@
     }
 
     &__p {
-        font-family: var(--font-family-Poppins-Reg);
-        color: var(--neutrals-4);
-        font-size: 16px;
-        line-height: 24px;
+        @include p;
     }
 
     &__mini {
@@ -115,10 +110,7 @@
 
     &__text,
     &__date {
-        font-family: var(--font-family-Poppins-Reg);
-        color: var(--neutrals-4);
-        font-size: 14px;
-        line-height: 24px;
+        @include p;
     }
 
     &__text {
