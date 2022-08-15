@@ -1,0 +1,53 @@
+#download {
+    position: relative;
+}
+.download {
+    @include grid;
+    margin-bottom: 200px;
+    &__block {
+        grid-column: 1 / 6;
+        margin-top: 12em;
+    }
+
+    &__title {
+        margin-bottom: 4em;
+        &__h2 {
+            @include h2;
+        }
+        &__p {
+            @include p;
+            margin-top: 1em;
+        }
+    }
+    &__store {
+        @include flex-v-center;
+        padding: 2em 0 2em 0;
+        &:not(:last-child) {                
+                border-bottom: 1px solid var(--neutrals-3);
+            }
+    }
+    &__app-icon {
+        margin-right: 1.5em;
+    }
+    &__app {
+        color: var(--neutrals-8);
+        font-family: var(--font-family-Poppins-Reg);
+        font-size: 24px;
+        line-height: 32px;
+    }
+    &__p {
+        color: var(--neutrals-4);
+        font-family: var(--font-family-Poppins-Reg);
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 64%;
+        transform: translateY(-50%);
+        right: calc(50% - 800px);
+        z-index: 1;
+    }
+
+}

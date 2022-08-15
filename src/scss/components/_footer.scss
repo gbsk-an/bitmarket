@@ -1,7 +1,9 @@
+#footer {
+    border-top: 1px solid var(--neutrals-3);
+}
 .footer {
     max-width: 1120px;
-    margin: 0 auto;
-    border-top: 1px solid var(--neutrals-3);
+    margin: 0 auto;    
 
     &__flexbox{
         @include flex-sb;

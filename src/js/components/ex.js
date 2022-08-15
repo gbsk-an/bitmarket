@@ -1,1 +1,1 @@
-console.log('maxgraph');
+console.log('hello');
