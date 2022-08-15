@@ -4,18 +4,18 @@
     &__content {
         z-index: -1;
         grid-column: 1 / 7;
-        margin-top: 161px;        
+        margin-top: 10em;        
     }
 
     &__h1 {
-        margin-bottom: 20px;
+        margin-bottom: 0.3em;
         color: var(--neutrals-8);
         font-size: 64px;
         font-family: var(--font-family-DMSans);
     }
 
     &__p {
-        margin-bottom: 32px;
+        margin-bottom: 2em;
         color: var(--neutrals-4);
         font-size: 16px;
         font-family: var(--font-family-Poppins-Reg);
@@ -23,12 +23,14 @@
 
     .start-now-button {
         @include blue-btn;
-        padding: 16px 24px;
-        margin-bottom: 80px;
+        padding: 1em 1.5em;
+        margin-bottom: 5em;
+        font-size: 16px;
+        line-height: 16px;
     }
 
     &__small-circle-button{
-        margin-bottom: 148px;
+        margin-bottom: 9.25em;
     }
 
     &__image {
@@ -50,7 +52,7 @@
 .blocks-hh {
     grid-column: 3 span;
     margin: 24px;    
-    padding: 32px 60px 32px 32px;
+    padding: 2em 3.75em 2em 2em;
 }
 
     .blocks-hh:hover {
@@ -61,13 +63,13 @@
     }
 
     .coin-symbol {
-        margin-bottom: 16px;
+        margin-bottom: 1em;
     }
 
     &__coin-rate {         
         @include flex-all-sb;
         max-width: 131px;
-        margin: 0 0 6px;       
+        margin: 0 0 0.5em;       
     }
     &__coin {
         margin: 0;
@@ -79,7 +81,7 @@
     &__rate-btc {
         margin: 0;
         max-width: 58px;
-        padding: 2px 8px;
+        padding: 0.16em 0.3em;
         border-radius: 24px;
         background-color: var(--primary-4);
         color: var(--neutrals-8);

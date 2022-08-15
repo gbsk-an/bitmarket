@@ -6,7 +6,8 @@
 }
 
 .menu-items {
-    @include flex-all-sb;    
+    @include flex-all-sb; 
+    flex-wrap: wrap;   
 }
 
 .logo {
