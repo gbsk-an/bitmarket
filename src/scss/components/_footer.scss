@@ -1,0 +1,123 @@
+.footer {
+    max-width: 1120px;
+    margin: 0 auto;
+    border-top: 1px solid var(--neutrals-3);
+
+    &__flexbox{
+        @include flex-sb;
+    }
+
+    &__blocks {
+        padding-top: 5em; 
+        padding-bottom: 2.7em;
+        border-bottom: 1px solid var(--neutrals-2);
+    }
+
+    &__block-1 {
+        display: flex;
+        flex: 0 0 39%;
+        padding-left: 0;
+    }
+
+    &__block-2 {
+        padding-right: 5em;        
+        padding-left: 5em;
+        border-left: 1px solid var(--neutrals-2);
+    }
+
+    &__block-3 {
+        padding-left: 86px;
+        border-left: 1px solid var(--neutrals-2);        
+    }
+
+    &__logo__link {
+        display: inline-block;
+        overflow: hidden;
+        width: 32px;
+        margin-right: 160px;
+    }
+
+    &__item {     
+        &:not(:last-child) {
+            padding-bottom: 24px;
+        }       
+    }
+
+    &__nav-link {
+        color: var(--neutrals-4);
+        font-family: var(--font-family-DMSans);
+        font-size: 14px;
+        line-height: 16px; 
+    }
+    
+
+    &__title {
+        margin-bottom: 3.4em;
+        color: var(--neutrals-6);
+        text-transform: uppercase;
+        font-family: var(--font-family-Poppins-SB);
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    &__adress-tel {
+        color: var(--neutrals-4);
+        font-family: var(--font-family-Poppins-Reg);
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__p {
+        color: var(--neutrals-6);
+        font-family: var(--font-family-Poppins-Reg);
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__email-input {
+        position: relative;
+        margin-top: 20px;        
+        padding: 14px 58px 14px 16px;
+        border: 2px solid var(--neutrals-2);
+        border-radius: 90px;
+    }
+
+    &__email {
+        width: 100%;
+        border: none;
+        background-color: var(--neutrals-1);
+        color: var(--neutrals-4);
+        font-family: var(--font-family-Poppins-Reg);
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+
+    &__btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        bottom: 8px;
+        width: 32px;
+        height: 32px;
+    }
+
+    &__bottom-bar {
+        @include flex-all-sb;
+        padding-top: 1.6em;
+        padding-bottom: 1.4em;
+    }
+
+    &__copyright {
+        &__p {
+            font-family: var(--font-family-Poppins-Reg);
+            color: var(--neutrals-4);
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+
+    &__icon:not(:last-child) {
+        margin-right: 1.2em;
+    }
+}

@@ -38,6 +38,11 @@
   justify-content: space-between;
 }
 
+@mixin flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
 $browser-context: 16; // Default
 
 @function rem($pixels, $context: $browser-context) {

@@ -377,3 +377,8 @@ template {
 [hidden] {
 	display: none;
 }
+
+input[type=button]::-moz-focus-inner {
+	border: 0;
+	outline: none;
+}
