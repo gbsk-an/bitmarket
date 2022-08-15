@@ -1,17 +1,57 @@
+.bg-become-trader {
+    background-color: var(--shade-2-30);
+}
+
 .become-trader {
     @include grid;
-    margin-top: 136px;
+    padding-top: 136px;
+    padding-bottom: 152px;
 
     &__title {
-        grid-column: 5 / 10;
+        grid-column: 4 / 10;
+        margin-bottom: 6em;
         text-align: center;
     }
 
     &__h2 {
         @include h2;
+        margin-bottom: .4em
     }
 
     &__p {
         @include p;
+    }
+
+    &__containers {
+        grid-column: span 4;
+        margin-bottom: 4em;
+        padding: 78px 32px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: var(--neutrals-2);
+    }
+
+    &__p-title {
+        margin-top: 2em;
+        color: var(--neutrals-8);
+        font-family: var(--font-family-Poppins-SB);
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__p-description {
+        margin-top: 1.1em;
+        font-family: var(--font-family-Poppins-Reg);
+        color: var(--neutrals-4);
+        font-size: 14px;
+        line-height: 24px;
+    }
+    &__btn {
+        grid-column: 6 / 8;
+        justify-self: center;        
+
+        &__contact-us {
+            @include blue-btn;
+            padding: 16px 24px;            
+        }
     }
 }
