@@ -1,7 +1,6 @@
 .hotest-news {
     @include grid;
-    margin-top: 8.5em;
-
+    padding-top: $padding-section-top;
     &__nav {
         grid-column: 4 span;
         margin-bottom: 5em;

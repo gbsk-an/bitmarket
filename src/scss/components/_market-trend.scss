@@ -1,4 +1,4 @@
 .market-trend {
     @include grid;
-    margin-top: 136px;
+    @include padding-section;
 }

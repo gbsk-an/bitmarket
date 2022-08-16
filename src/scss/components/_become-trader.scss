@@ -4,8 +4,7 @@
 
 .become-trader {
     @include grid;
-    padding-top: 8.5em;
-    padding-bottom: 9.5em;
+    @include padding-section;
 
     &__title {
         grid-column: 4 / 10;

@@ -96,6 +96,13 @@ $browser-context: 16; // Default
     display: block;
 }
 
+@mixin padding-section {
+  padding-top: 8.5em;
+  padding-bottom: 8.5em;
+}
+
+$padding-section-top: 8.5em;
+
 @mixin grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
