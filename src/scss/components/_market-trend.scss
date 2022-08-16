@@ -1,4 +1,161 @@
+.wrapper-mt {
+    max-width: 1200px;
+    margin: 0 auto;
+    @include padding-section;
+}
 .market-trend {
     @include grid;
-    @include padding-section;
+    
+
+    &__nav {
+        grid-column: 6 span;
+        margin-bottom: 4em;
+    }
+    &__h2 {
+        @include h2;
+        margin-bottom: 0.84em;
+    }
+    &__subnav {
+        @include flex-all-sb;
+
+        &__item {
+            padding: 0.4em 0.8em;
+            color: var(--neutrals-4);
+            font-family: var(--font-family-DMSans);
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        &__item:hover {
+            background-color: var(--neutrals-3);
+            border-radius: 100px;
+            color: var(--neutrals-8);
+            transition: 0.2s;
+        }
+    }
+
+    &__btn {
+        grid-column: 11 / span 2;  
+        margin-left: 2.473em;
+
+        &__view-more {
+            @include btn-clear;
+            padding: 1em 1.5em;
+        }     
+    }
+}
+
+.table {
+    display: table;
+    border-spacing: 0 0.75em;
+    width: 100%;
+    &__row {
+        display: table-row;   
+        
+        &:first-child {
+            padding: 1.5em 1em;            
+        }  
+          
+    }
+    
+    &__header {
+        display: table-header-group;
+        vertical-align: middle;
+        padding: 1.5em 1em;
+    }
+
+    &__header-col {  
+        display: table-cell;      
+        color: var(--neutrals-4);
+        font-family: var(--font-family-Poppins-Reg);
+        font-size: 14px;
+        line-height: 24px;
+        border-bottom: 1px solid var(--neutrals-3);  
+    }
+    &__price {
+        padding: 0.5em 0 0.5em ;
+        color: var(--neutrals-8);
+        font-family: var(--font-family-Poppins-Reg);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__price-change {
+        padding: 0.5em 1.9375em 0.5em 0;
+    }
+
+    &__price-plus {
+        color: var(--primary-4);
+        font-family: var(--font-family-Poppins-Reg);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__price-minus {
+        color: var(--primary-3);
+        font-family: var(--font-family-Poppins-Reg);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    
+    &__column {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 1.5em 1em;
+
+        &:first-child {            
+            color: var(--neutrals-4);
+            font-family: var(--font-family-Poppins-Reg);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            border-radius: 12px 0 0 12px;
+        }
+        &:last-child {
+            border-radius: 0 12px 12px 0;
+        }
+        
+        &__el {
+            @include flex-v-center;
+        
+            &__icon {
+                margin: 0 1em 0 0;
+                
+            }
+            &__title {
+                padding: 0.5em 0;
+                margin: 0 .75em 0 0;
+                color: var(--neutrals-8);
+                font-family: var(--font-family-Poppins-Reg);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &__subtitle {
+                padding: 0.5em 0;
+                margin: 0;
+                color: var(--neutrals-5);
+                text-transform: uppercase;
+                font-family: var(--font-family-Poppins-Reg);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }   
+    
+    &__btn {
+        @include btn-clear;
+        padding: 0.75em 1em;
+    }  
+
+    &__link:hover {
+        background-color: var(--neutrals-2);
+        transition: .2s;
+        border-radius: 12px;
+    }
 }
