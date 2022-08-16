@@ -4,8 +4,8 @@
 
 .become-trader {
     @include grid;
-    padding-top: 136px;
-    padding-bottom: 152px;
+    padding-top: 8.5em;
+    padding-bottom: 9.5em;
 
     &__title {
         grid-column: 4 / 10;
@@ -25,7 +25,7 @@
     &__containers {
         grid-column: span 4;
         margin-bottom: 4em;
-        padding: 78px 32px;
+        padding: 4.875em 2em;
         text-align: center;
         border-radius: 20px;
         background-color: var(--neutrals-2);
@@ -51,7 +51,7 @@
 
         &__contact-us {
             @include blue-btn;
-            padding: 16px 24px;            
+            padding: 1em 1.5em;            
         }
     }
 }

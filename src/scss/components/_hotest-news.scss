@@ -1,42 +1,44 @@
 .hotest-news {
     @include grid;
-    margin-top: 136px;
+    margin-top: 8.5em;
 
     &__nav {
         grid-column: 4 span;
-        margin-bottom: 80px
+        margin-bottom: 5em;
     }
 
     &__subnav {
         @include flex-all-sb;
 
         &__item {
-            padding: 6px 12px;
+            padding: 0.4em 0.8em;
             color: var(--neutrals-4);
             font-family: var(--font-family-DMSans);
+            font-size: 14px;
+            line-height: 16px;
         }
 
         &__item:hover {
             background-color: var(--neutrals-3);
             border-radius: 100px;
             color: var(--neutrals-8);
-            transition: 0.2ms;
+            transition: 0.2s;
         }
     }
 
     &__btn {
         grid-column: 11 / span 2;  
-        margin-left: 39px;
+        margin-left: 2.473em;
 
         &__view-more {
             @include btn-clear;
-            padding: 16px 24px;
+            padding: 1em 1.5em;
         }     
     }
 
     &__h2 {
         @include h2;
-        margin-bottom: 40px;
+        margin-bottom: 0.84em;
     }
 }
 
@@ -52,14 +54,14 @@
 
     &__flex {
         @include flex-all-sb;
-        margin-bottom: 16px;
+        margin-bottom: 1em;
     }
 
     &__large {
         grid-column: span 6;
 
         &__picture {
-            margin-bottom: 40px;
+            margin-bottom: 2.5em;
             width: 100%;
         }
     }
@@ -67,7 +69,7 @@
     &__learn-more-btn {
         @include btn-clear;
         position: relative;
-        padding: 13px 52px 13px 24px;
+        padding: 0.8125em 3.25em 0.8125em 1.5em;
     }
 
     &__learn-more-btn::after {
