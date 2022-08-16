@@ -1,0 +1,118 @@
+.crypto-news {
+    @include padding-section;
+    
+    max-width: 1164px;
+    margin: 0 auto;
+
+    &__block {
+        margin-bottom: 5em;
+    }
+
+    &__logo {        
+        @include flex-all-center;       
+
+        &__p {
+            margin: 0;
+            padding-left: 0.3em;
+            color: var(--neutrals-7);
+            font-family: var(--font-family-Poppins-Reg);
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+
+    &__titile {
+        text-align: center;
+
+        &__h2 {
+            @include h2;
+
+            margin-top: 0.3em;
+        }
+        &__p {
+            @include p;
+
+            margin-top: 1.25em;
+        }
+    }
+
+    &__item {
+        @include flex-all-sb;
+        
+        padding: 6em 5em;
+        background-color: var(--neutrals-2);
+        box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
+        border-radius: 24px;
+    }
+
+    &__description {        
+        width: calc(100% - 352px);
+        margin-right: 4.75em;
+        &__p {
+            margin-top: 5.3em;
+            margin-bottom: 1.3em;
+            text-transform: uppercase;
+            color: var(--neutrals-4);
+            font-family: var(--font-family-Poppins-SB);
+            font-size: 12px;
+            line-height: 12px;
+            opacity: 0.7;
+        }
+
+        &__title {
+            margin-bottom: 0.83em;
+            font-family: var(--font-family-Poppins-Reg);
+            color: var(--neutrals-8);
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        &__text {
+            @include p;
+
+            margin-bottom: 6em;            
+        }
+    }
+
+    &__btn {
+
+        &__join-now { 
+            padding: 0.85em 1.14em;
+            border: 2px solid var(--neutrals-4);
+            border-radius: 90px;              
+            color: var(--neutrals-8);
+            font-family: var(--font-family-DMSans);
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    &__pic {        
+        width: 100%;
+    }
+    
+    &__btns {
+        @include flex-all-center;
+
+    }
+    &__slider-btn {
+        @include bg-cover;
+
+        margin-top: 1em;
+        width: 32px;
+        height: 32px;
+
+        &--prev {
+            background-image: url('../img/svg/arrow-left.svg');
+        }
+
+        &--next {
+            background-image: url('../img/svg/arrow-right.svg');
+        }
+
+        &:not(:last-child) {
+            margin-right: 2em;
+        }
+    }
+}
