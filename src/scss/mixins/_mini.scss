@@ -21,6 +21,12 @@
   justify-content: flex-start;
 }
 
+@mixin flex-end-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 @mixin flex-h-center {
   display: flex;
   justify-content: center;

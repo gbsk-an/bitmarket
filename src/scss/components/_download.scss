@@ -1,10 +1,11 @@
 .trade-anywhere {
     position: relative;
+    background-color: var(--neutrals-1);
 }
 .download {
     @include grid;
 
-    margin-bottom: 15.75em;
+    margin-bottom: 2.75em;
     &__block {
         grid-column: 1 / 6;
         margin-top: 12em;
@@ -47,7 +48,7 @@
 
     &__bg {
         position: absolute;
-        top: 64%;
+        top: 50%;
         transform: translateY(-50%);
         right: calc(50% - 800px);
         z-index: 1;

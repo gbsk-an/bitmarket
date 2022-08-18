@@ -1,3 +1,7 @@
+.news {
+  background-color: var(--neutrals-1);
+}
+
 .hotest-news {
     @include grid;
 
@@ -27,8 +31,8 @@
     }
 
     &__btn {
-        grid-column: 11 / span 2;
-        margin-left: 2.473em;
+      grid-column: 11 / span 3;
+      margin-left: 3.3em;
 
         &__view-more {
             @include btn-clear;

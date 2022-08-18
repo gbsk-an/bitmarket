@@ -4,7 +4,7 @@
 @import "fonts";
 @import "settings";
 
-// подключения компонентов страницы
+// подключения компонентов главной страницы
 @import "./components/header";
 @import "./components/banner";
 @import "./components/hotest-news";
@@ -14,3 +14,6 @@
 @import "./components/slideshow";
 @import "./components/how-it-work";
 @import "./components/footer";
+
+// подключения компонентов логина и регистрации
+@import "./components/login";

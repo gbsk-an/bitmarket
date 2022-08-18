@@ -1,18 +1,19 @@
 #footer {
     border-top: 1px solid var(--neutrals-3);
+    background-color: var(--neutrals-1);
+}
+.wrapper-footer {
+  margin: 0 auto;
+  max-width: 1120px;
+
 }
 .footer {
-    max-width: 1120px;
-    margin: 0 auto;    
-
-    &__flexbox{
-        @include flex-sb;
-    }
+    @include flex-sb;
 
     &__blocks {
-        padding-top: 5em; 
+        padding-top: 5em;
         padding-bottom: 2.7em;
-        border-bottom: 1px solid var(--neutrals-2);
+
     }
 
     &__block-1 {
@@ -22,14 +23,14 @@
     }
 
     &__block-2 {
-        padding-right: 5em;        
+        padding-right: 5em;
         padding-left: 5em;
         border-left: 1px solid var(--neutrals-2);
     }
 
     &__block-3 {
         padding-left: 5.375em;
-        border-left: 1px solid var(--neutrals-2);        
+        border-left: 1px solid var(--neutrals-2);
     }
 
     &__logo__link {
@@ -39,19 +40,19 @@
         margin-right: 10em;
     }
 
-    &__item {     
+    &__item {
         &:not(:last-child) {
             padding-bottom: 1.5em;
-        }       
+        }
     }
 
     &__nav-link {
         color: var(--neutrals-4);
         font-family: var(--font-family-DMSans);
         font-size: 14px;
-        line-height: 16px; 
+        line-height: 16px;
     }
-    
+
 
     &__title {
         margin-bottom: 3.4em;
@@ -78,7 +79,7 @@
 
     &__email-input {
         position: relative;
-        margin-top: 1.25em;        
+        margin-top: 1.25em;
         padding: 0.875em 3.625em 0.875em 1em;
         border: 2px solid var(--neutrals-2);
         border-radius: 90px;
@@ -103,23 +104,33 @@
         width: 32px;
         height: 32px;
     }
+}
 
-    &__bottom-bar {
-        @include flex-all-sb;
-        padding-top: 1.6em;
-        padding-bottom: 1.4em;
-    }
+.bottom-bar-border {
+  border-top: 1px solid var(--neutrals-2);
+}
+
+.bottom-bar {
+    @include flex-all-sb;
+
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-top: 1.6em;
+    padding-bottom: 1.4em;
+
 
     &__copyright {
-        &__p {
-            font-family: var(--font-family-Poppins-Reg);
-            color: var(--neutrals-4);
-            font-size: 12px;
-            line-height: 20px;
-        }
+      &__p {
+          font-family: var(--font-family-Poppins-Reg);
+          color: var(--neutrals-4);
+          font-size: 12px;
+          line-height: 20px;
+      }
     }
 
     &__icon:not(:last-child) {
         margin-right: 1.2em;
     }
 }
+
+
