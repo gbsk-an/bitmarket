@@ -1,7 +1,9 @@
+.slider {
+  padding-top: $padding-section-top;
+}
 .how-it-work {
     @include grid;
-    @include padding-section;
-    
+
     &__title {
         grid-column: 4 / 10;
         margin-bottom: 5em;
@@ -27,7 +29,7 @@
     &__blocks-flex {
         @include flex-all-sb;
     }
-    
+
     &__element:first-child {
         margin-left: 3.5em;
     }

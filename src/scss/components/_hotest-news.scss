@@ -1,12 +1,13 @@
 .hotest-news {
     @include grid;
-    padding-top: $padding-section-top;
-    &__nav {
+
+
+    &__navigation {
         grid-column: 4 span;
         margin-bottom: 5em;
     }
 
-    &__subnav {
+    &__nav {
         @include flex-all-sb;
 
         &__item {
@@ -26,13 +27,13 @@
     }
 
     &__btn {
-        grid-column: 11 / span 2;  
+        grid-column: 11 / span 2;
         margin-left: 2.473em;
 
         &__view-more {
             @include btn-clear;
             padding: 1em 1.5em;
-        }     
+        }
     }
 
     &__h2 {
@@ -81,7 +82,7 @@
         background-position: center;
         right: 18px;
         top: 50%;
-        transform: translateY(-50%);        
+        transform: translateY(-50%);
     }
 
     &__p {

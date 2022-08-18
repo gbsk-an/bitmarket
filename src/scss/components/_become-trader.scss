@@ -1,10 +1,10 @@
-.bg-become-trader {
+.bg-p-become-trader {
     background-color: var(--shade-2-30);
+    padding-top: $padding-section-top;
 }
 
 .become-trader {
     @include grid;
-    @include padding-section;
 
     &__title {
         grid-column: 4 / 10;
@@ -14,11 +14,13 @@
 
     &__h2 {
         @include h2;
+
         margin-bottom: .4em
     }
 
     &__p {
         @include p;
+
     }
 
     &__containers {
@@ -46,11 +48,12 @@
     }
     &__btn {
         grid-column: 6 / 8;
-        justify-self: center;        
+        justify-self: center;
 
         &__contact-us {
             @include blue-btn;
-            padding: 1em 1.5em;            
+
+            padding: 1em 1.5em;
         }
     }
 }

@@ -18,7 +18,8 @@ h1, h2, h3, h4, p {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1120px;
+  padding-bottom: $padding-section-bottom;
 }
 
 .page {
@@ -45,18 +46,17 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  overflow: hidden;
 }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
 }
 
 .btn-reset {
   border: none;
   padding: 0;
   background: transparent;
-  cursor: pointer;
 }
 
 .list-reset {

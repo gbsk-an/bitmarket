@@ -96,12 +96,8 @@ $browser-context: 16; // Default
     display: block;
 }
 
-@mixin padding-section {
-  padding-top: 8.5em;
-  padding-bottom: 8.5em;
-}
-
 $padding-section-top: 8.5em;
+$padding-section-bottom: 8.5em;
 
 @mixin grid {
   display: grid;
@@ -114,6 +110,11 @@ $padding-section-top: 8.5em;
   background-color: var(--primary-1);
   color: var(--neutrals-8);
   font-family: var(--font-family-DMSans);
+  transition: all .3s;
+
+  &:hover {
+    box-shadow: 0 0 0 2px var(--neutrals-7) inset;
+  }
 }
 
 @mixin btn-clear {
@@ -122,7 +123,14 @@ $padding-section-top: 8.5em;
   color: var(--neutrals-8);
   font-family: var(--font-family-DMSans);
   font-size: 16px;
+  transition: all .3s;
+
+  &:hover {
+    background-color: var(--neutrals-3);
+    box-shadow: 0 0 0 2px var(---neutrals-3) inset;
+  }
 }
+
 
 @mixin h2 {
   color: var(--neutrals-8);

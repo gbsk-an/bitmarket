@@ -1,8 +1,9 @@
-#download {
+.trade-anywhere {
     position: relative;
 }
 .download {
     @include grid;
+
     margin-bottom: 15.75em;
     &__block {
         grid-column: 1 / 6;
@@ -16,13 +17,15 @@
         }
         &__p {
             @include p;
+
             margin-top: 1em;
         }
     }
     &__store {
         @include flex-v-center;
+
         padding: 2em 0 2em 0;
-        &:not(:last-child) {                
+        &:not(:last-child) {
                 border-bottom: 1px solid var(--neutrals-3);
             }
     }
