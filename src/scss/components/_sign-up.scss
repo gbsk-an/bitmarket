@@ -1,6 +1,7 @@
-.login-block {
+.sign-up {
   background-color: var(--neutrals-7);
   margin-top: 4em;
+  margin-bottom: 5em;
 
   &__head {
     @include flex-all-sb;
@@ -27,7 +28,7 @@
       font-size: 14px;
       font-family: var(--font-family-Poppins-Reg);
     }
-    &__sign-up {
+    &__login {
       color: var(--primary-1);
       transition: .3s;
       &:hover {
@@ -37,7 +38,7 @@
   }
 }
 
-.login-wrapper {
+.sign-up-wrapper {
   @include flex-all-center;
 
   flex-wrap: wrap;
@@ -46,8 +47,53 @@
   text-align: center;
 }
 
-.login-form {
-  margin-bottom: 2em;
+.registration-btns {
+  @include flex-all-sb;
+  margin-bottom: 1.4em;
+
+
+  &__apple {
+
+    &--btn {
+    padding: 0.9em 3em;
+    border-radius: 90px;
+    background-color: var(--shade-2-30);
+    color: var(--neutrals-8);
+    font-family: var(--font-family-DMSans);
+    transition: all .3s;
+
+    &:hover {
+      box-shadow: var(--box-shadow);
+    }
+    }
+  }
+  &__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: .6em;
+  }
+
+  &__google {
+
+    &--btn {
+    padding: 0.9em 3em;
+    border-radius: 90px;
+    border: 2px solid var(--neutrals-6);
+    background-color: var(--neutrals-7);
+    color: var(--neutrals-2);
+    font-family: var(--font-family-DMSans);
+    transition: all .3s;
+
+
+    &:hover {
+      box-shadow: var(--box-shadow);
+    }
+    }
+  }
+}
+
+.sign-up-form {
+  margin-bottom: .8em;
   &__h3 {
     margin-bottom: .4em;
     color: var(--neutrals-2);
@@ -61,30 +107,20 @@
     opacity: 70%;
   }
 
-  &__url {
-    position: relative;
-    color: var(--neutrals-2);
-    font-family: var(--font-family-DMSans);
-    font-size: 20px;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 16px;
-      height: 18px;
-      background-image: url('../img/svg/lock.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      left: 10%;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
+  &__p-2 {
+    @include p;
+    border-top: 1px solid var(--neutrals-6);
+    padding-top: 1em;
+    margin-bottom: 1em;
+    opacity: 70%;
+    font-size: 14px;
   }
+
 }
 
-.login-email,
-.login-password {
+
+.sign-up-email,
+.sign-up-password {
   width: 100%;
   &__email,
   &__password {
@@ -101,7 +137,7 @@
   }
 }
 
-.login-button {
+.sign-up-button {
   width: 100%;
   &__btn {
     @include blue-btn;
@@ -114,10 +150,15 @@
     }
   }
 }
-.reset-password {
+.sign-up-privacy-policy {
   margin-top: 1em;
   width: 100%;
-  text-align: right;
+  text-align: center;
+  &__p {
+    @include p;
+
+    font-size: 14px;
+  }
   &__link {
     font-family: var(--font-family-Poppins-Reg);
     color: var(--primary-1);
