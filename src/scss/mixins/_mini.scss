@@ -137,16 +137,9 @@ $padding-section-bottom: 8.5em;
   }
 }
 
-
 @mixin h2 {
-  color: var(--neutrals-8);
-  font-family: var(--font-family-DMSans);
-  font-size: 48px;
+  margin: 0;
 }
-
 @mixin p {
-  font-family: var(--font-family-Poppins-Reg);
-  color: var(--neutrals-4);
-  font-size: 16px;
-  line-height: 24px;
+  margin: 0;
 }

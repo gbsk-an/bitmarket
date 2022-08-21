@@ -15,28 +15,21 @@
     &__logo {
         @include flex-all-center;
 
-        &__p {
-            margin: 0;
+        &-h4 {
             padding-left: 0.3em;
             color: var(--neutrals-7);
             font-family: var(--font-family-Poppins-Reg);
             font-weight: 600;
-            font-size: 24px;
-            line-height: 32px;
         }
     }
 
     &__titile {
         text-align: center;
 
-        &__h2 {
-            @include h2;
-
+        &-h2 {
             margin-top: 0.3em;
         }
-        &__p {
-            @include p;
-
+        &-p {
             margin-top: 1.25em;
         }
     }
@@ -53,7 +46,7 @@
     &__description {
         width: calc(100% - 352px);
         margin-right: 4.75em;
-        &__p {
+        &-p {
             margin-top: 5.3em;
             margin-bottom: 1.3em;
             text-transform: uppercase;
@@ -64,17 +57,12 @@
             opacity: 0.7;
         }
 
-        &__title {
+        &-h4 {
             margin-bottom: 0.83em;
             font-family: var(--font-family-Poppins-Reg);
-            color: var(--neutrals-8);
-            font-size: 24px;
-            line-height: 32px;
         }
 
         &__text {
-            @include p;
-
             margin-bottom: 6em;
         }
     }
@@ -86,9 +74,7 @@
             border: 2px solid var(--neutrals-4);
             border-radius: 90px;
             color: var(--neutrals-8);
-            font-family: var(--font-family-DMSans);
-            font-size: 14px;
-            line-height: 16px;
+            cursor: pointer;
         }
     }
 

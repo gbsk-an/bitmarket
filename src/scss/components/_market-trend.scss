@@ -4,27 +4,21 @@
 .market-trend {
     @include grid;
 
-    &__nav {
+    &__navigation {
         grid-column: 6 span;
         margin-bottom: 4em;
     }
     &__h2 {
-        @include h2;
-
         margin-bottom: 0.84em;
     }
-    &__subnav {
+    &__nav {
         @include flex-all-sb;
 
-        &__item {
+        &--item {
             padding: 0.4em 0.8em;
-            color: var(--neutrals-4);
-            font-family: var(--font-family-DMSans);
-            font-size: 14px;
-            line-height: 16px;
         }
 
-        &__item:hover {
+        &--item:hover {
             background-color: var(--neutrals-3);
             border-radius: 100px;
             color: var(--neutrals-8);
@@ -65,11 +59,6 @@
 
     &__header-col {
         display: table-cell;
-        color: var(--neutrals-4);
-        font-family: var(--font-family-Poppins-Reg);
-        font-size: 14px;
-        line-height: 24px;
-        border-bottom: 1px solid var(--neutrals-3);
     }
     &__price {
         padding: 0.5em 0 0.5em ;

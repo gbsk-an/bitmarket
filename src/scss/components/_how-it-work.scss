@@ -9,16 +9,11 @@
         grid-column: 4 / 10;
         margin-bottom: 5em;
         text-align: center;
-        &__h2 {
-            @include h2;
+        &-h2 {
             margin-bottom: 0.42em;
-            line-height: 56px;
         }
-        &__p {
+        &-p {
             color: var(--neutrals-6);
-            font-family: var(--font-family-Poppins-Reg);
-            font-size: 16px;
-            line-height: 24px;
         }
     }
 
@@ -60,17 +55,10 @@
 
         &__title {
             margin-bottom: 1em;
-            font-family: var(--font-family-Poppins-SB);
-            color: var(--neutrals-8);
-            font-size: 16px;
-            line-height: 24px;
         }
 
         &__description {
-            font-family: var(--font-family-Poppins-Reg);
             color: var(--neutrals-7);
-            font-size: 14px;
-            line-height: 24px;
         }
     }
 

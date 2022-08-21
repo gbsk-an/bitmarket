@@ -12,17 +12,8 @@
         margin-bottom: 14em;
     }
 
-    &__h1 {
+    &__title {
         margin-bottom: 0.3em;
-        color: var(--neutrals-8);
-        font-size: 64px;
-        font-family: var(--font-family-DMSans);
-    }
-
-    &__p {
-        color: var(--neutrals-4);
-        font-size: 16px;
-        font-family: var(--font-family-Poppins-Reg);
     }
 
     &__btn {
@@ -34,8 +25,6 @@
         width: 174px;
         height: 48px;
         padding: 1em 1.5em;
-        font-size: 16px;
-        line-height: 16px;
       }
     }
 
@@ -83,9 +72,7 @@
     }
     &__coin {
         margin: 0;
-        color: var(--neutrals-4);
         font-family: var(--font-family-Poppins-SB);
-        font-size: 12px;
     }
     &__rate,
     &__rate-btc {
@@ -103,13 +90,8 @@
     }
     &__price{
         margin-bottom: 4px;
-        color: var(--neutrals-8);
-        font-family: var(--font-family-Poppins-SB);
-        font-size: 24px;
     }
     &__price-little{
         color: var(--neutrals-8);
-        font-family: var(--font-family-Poppins-Reg);
-        font-size: 12px;
     }
 }

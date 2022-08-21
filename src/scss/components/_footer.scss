@@ -1,6 +1,6 @@
 #footer {
-    border-top: 1px solid var(--neutrals-3);
-    background-color: var(--neutrals-1);
+  border-top: 1px solid var(--neutrals-3);
+  background-color: var(--neutrals-1);
 }
 .wrapper-footer {
   margin: 0 auto;
@@ -46,14 +46,6 @@
         }
     }
 
-    &__nav-link {
-        color: var(--neutrals-4);
-        font-family: var(--font-family-DMSans);
-        font-size: 14px;
-        line-height: 16px;
-    }
-
-
     &__title {
         margin-bottom: 3.4em;
         color: var(--neutrals-6);
@@ -63,18 +55,8 @@
         line-height: 12px;
     }
 
-    &__adress-tel {
-        color: var(--neutrals-4);
-        font-family: var(--font-family-Poppins-Reg);
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    &__p-subscribe {
+    &__subscribe {
         color: var(--neutrals-6);
-        font-family: var(--font-family-Poppins-Reg);
-        font-size: 14px;
-        line-height: 24px;
     }
 
     &__email-input {
@@ -89,10 +71,6 @@
         width: 100%;
         border: none;
         background-color: var(--neutrals-1);
-        color: var(--neutrals-4);
-        font-family: var(--font-family-Poppins-Reg);
-        font-size: 14px;
-        line-height: 24px;
     }
 
 

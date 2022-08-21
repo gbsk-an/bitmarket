@@ -7,20 +7,13 @@
     @include grid;
 
     &__title {
-        grid-column: 4 / 10;
-        margin-bottom: 6em;
-        text-align: center;
+      grid-column: 4 / 10;
+      margin-bottom: 6em;
+      text-align: center;
     }
 
     &__h2 {
-        @include h2;
-
-        margin-bottom: .4em
-    }
-
-    &__p {
-        @include p;
-
+      margin-bottom: .4em
     }
 
     &__containers {
@@ -34,17 +27,9 @@
 
     &__p-title {
         margin-top: 2em;
-        color: var(--neutrals-8);
-        font-family: var(--font-family-Poppins-SB);
-        font-size: 16px;
-        line-height: 24px;
     }
-    &__p-description {
+    &__description {
         margin-top: 1.1em;
-        font-family: var(--font-family-Poppins-Reg);
-        color: var(--neutrals-4);
-        font-size: 14px;
-        line-height: 24px;
     }
     &__btn {
         grid-column: 6 / 8;

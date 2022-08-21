@@ -17,8 +17,6 @@
     &__title {
         padding-left: 0.3em;
         color: var(--neutrals-7);
-        font-size: 24px;
-        font-family: var(--font-family-Poppins-SB);
     }
 }
 
@@ -58,13 +56,6 @@
         cursor: pointer;
     }
 
-    &__link {
-        color: var(--neutrals-4);
-        font-size: 14px;
-        font-family: var(--font-family-DMSans);
-        line-height: 16px;
-    }
-
     &__sub-menu {
         position: absolute;
         display: none;
@@ -76,10 +67,6 @@
           display: flex;
           padding-top: 1em;
           padding-bottom: .5em;
-          color: var(--neutrals-4);
-          font-size: 14px;
-          font-family: var(--font-family-DMSans);
-          line-height: 16px;
         }
     }
 }
@@ -95,9 +82,7 @@
     &__btn-lang-rate {
         position: relative;
         padding: 1em 3.1em 1em 1.1em;
-        color: var(--neutrals-8);
         font-size: 14px;
-        font-family: var(--font-family-DMSans);
     }
 
     &__btn-lang-rate::after {
@@ -120,15 +105,12 @@
 
             margin-right: 8px;
             padding: 0.8em 1.1em;
-            font-size: 14px;
         }
         .login {
             padding: 0.8em 1.1em;
             border-radius: 90px;
             border: 2px solid var(--neutrals-4);
             color: var(--neutrals-8);
-            font-size: 14px;
-            font-family: var(--font-family-DMSans);
 
             &:hover {
               background-color: var(--neutrals-3);

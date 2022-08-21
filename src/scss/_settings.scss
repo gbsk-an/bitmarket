@@ -8,8 +8,93 @@ html {
   box-sizing: inherit;
 }
 
-h1, h2, h3, h4, p {
+.h1 {
+  margin: 0;
+  color: var(--neutrals-8);
+  font-size: 64px;
+  font-family: var(--font-family-DMSans);
+  font-weight: 700;
+  line-height: 64px;
+}
+.h2 {
+  margin: 0;
+  color: var(--neutrals-8);
+  font-size: 48px;
+  font-family: var(--font-family-DMSans);
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.h3 {
+  margin: 0;
+  color: var(--neutrals-8);
+  font-size: 32px;
+  font-family: var(--font-family-DMSans);
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.h4 {
+  margin: 0;
+  color: var(--neutrals-8);
+  font-size: 24px;
+  font-family: var(--font-family-Poppins-SB);
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.p {
+  margin: 0;
+  color: var(--neutrals-4);
+  font-size: 16px;
+  font-family: var(--font-family-Poppins-Reg);
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.p-14 {
+  margin: 0;
+  color: var(--neutrals-4);
+  font-size: 14px;
+  font-family: var(--font-family-Poppins-Reg);
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.p-bold-sans {
+  margin: 0;
+  color: var(--neutrals-8);
+  font-size: 16px;
+  font-family: var(--font-family-Poppins-SB);
+  line-height: 24px;
+}
+
+.p-14-bold {
   margin: 0 auto;
+  color: var(--neutrals-4);
+  font-size: 14px;
+  font-family: var(--font-family-DMSans);
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.p-bold-8 {
+  margin: 0 auto;
+  color: var(--neutrals-8);
+  font-size: 16px;
+  font-family: var(--font-family-DMSans);
+  font-weight: 700;
+  line-height: 16px;
+}
+
+
+.p-mini {
+  margin: 0 auto;
+  color: var(--neutrals-4);
+  font-size: 12px;
+  font-family: var(--font-family-Poppins-Reg);
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .wrapper {

@@ -16,10 +16,6 @@
 
         &__item {
             padding: 0.4em 0.8em;
-            color: var(--neutrals-4);
-            font-family: var(--font-family-DMSans);
-            font-size: 14px;
-            line-height: 16px;
         }
 
         &__item:hover {
@@ -40,21 +36,13 @@
         }
     }
 
-    &__h2 {
-        @include h2;
+    &__title {
         margin-bottom: 0.84em;
     }
 }
 
 .news-block {
     @include grid;
-
-    &__h3 {
-        margin: 0;
-        color: var(--neutrals-8);
-        font-family: var(--font-family-DMSans);
-        font-size: 32px;
-    }
 
     &__flex {
         @include flex-all-sb;
@@ -89,10 +77,6 @@
         transform: translateY(-50%);
     }
 
-    &__p {
-        @include p;
-    }
-
     &__mini {
         grid-column: span 6 / 13;
         margin-left: 5em;
@@ -108,19 +92,11 @@
 
     &__title {
         margin-bottom: 1.1em;
-        color: var(--neutrals-8);
-        font-family: var(--font-family-Poppins-SB);
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    &__text,
-    &__date {
-        @include p;
     }
 
     &__text {
         margin-bottom: 6em;
+        font-size: 14px;
     }
 
 }

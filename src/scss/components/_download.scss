@@ -13,12 +13,8 @@
 
     &__title {
         margin-bottom: 4em;
-        &__h2 {
-            @include h2;
-        }
-        &__p {
-            @include p;
 
+        &-p {
             margin-top: 1em;
         }
     }
@@ -34,16 +30,7 @@
         margin-right: 1.5em;
     }
     &__app {
-        color: var(--neutrals-8);
         font-family: var(--font-family-Poppins-Reg);
-        font-size: 24px;
-        line-height: 32px;
-    }
-    &__p {
-        color: var(--neutrals-4);
-        font-family: var(--font-family-Poppins-Reg);
-        font-size: 14px;
-        line-height: 24px;
     }
 
     &__bg {
