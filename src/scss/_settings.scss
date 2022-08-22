@@ -15,6 +15,9 @@ html {
   font-family: var(--font-family-DMSans);
   font-weight: 700;
   line-height: 64px;
+  @include small-tablet {
+    font-size: 60px;
+  }
 }
 .h2 {
   margin: 0;
@@ -23,6 +26,9 @@ html {
   font-family: var(--font-family-DMSans);
   font-weight: 700;
   line-height: 56px;
+  @include small-tablet {
+    font-size: 44px;
+  }
 }
 
 .h3 {
@@ -32,6 +38,9 @@ html {
   font-family: var(--font-family-DMSans);
   font-weight: 700;
   line-height: 40px;
+  @include small-tablet {
+    font-size: 28px;
+  }
 }
 
 .h4 {
@@ -41,6 +50,9 @@ html {
   font-family: var(--font-family-Poppins-SB);
   font-weight: 400;
   line-height: 32px;
+  @include small-tablet {
+    font-size: 22px;
+  }
 }
 
 .p {
@@ -101,6 +113,9 @@ html {
   margin: 0 auto;
   max-width: 1120px;
   padding-bottom: $padding-section-bottom;
+  @include small-tablet {
+    max-width: 600px;
+  }
 }
 
 .page {

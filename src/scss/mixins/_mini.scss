@@ -109,6 +109,11 @@ $padding-section-bottom: 8.5em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 0 32px;
+
+  @include small-tablet {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0 1em;
+  }
 }
 
 @mixin blue-btn {

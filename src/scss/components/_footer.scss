@@ -10,10 +10,10 @@
 .footer {
     @include flex-sb;
 
+
     &__blocks {
         padding-top: 5em;
         padding-bottom: 2.7em;
-
     }
 
     &__block-1 {
@@ -31,6 +31,7 @@
     &__block-3 {
         padding-left: 5.375em;
         border-left: 1px solid var(--neutrals-2);
+
     }
 
     &__logo__link {

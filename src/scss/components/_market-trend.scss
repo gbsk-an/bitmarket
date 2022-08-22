@@ -5,8 +5,11 @@
     @include grid;
 
     &__navigation {
-        grid-column: 6 span;
+        grid-column: 7 span;
         margin-bottom: 4em;
+        @include small-tablet {
+          grid-column: 5 span;
+        }
     }
     &__h2 {
         margin-bottom: 0.84em;
@@ -27,8 +30,8 @@
     }
 
     &__btn {
-      grid-column: 11 / span 3;
-      margin-left: 3.3em;
+      grid-column: -1 / span 1;
+      margin-top: 1.2em;
 
         &__view-more {
             @include btn-clear;

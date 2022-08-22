@@ -3,13 +3,12 @@
 }
 
 .crypto-news {
-    padding-top: $padding-section-top;
-    padding-bottom: $padding-section-bottom;
-    max-width: 1164px;
-    margin: 0 auto;
 
     &__block {
         margin-bottom: 5em;
+        @include small-tablet {
+          margin-bottom: 3em;
+        }
     }
 
     &__logo {
@@ -41,11 +40,17 @@
         background-color: var(--neutrals-2);
         box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
         border-radius: 24px;
+        overflow: hidden;
+        @include small-tablet {
+          padding: 1em 1.5em;
+        }
     }
 
     &__description {
         width: calc(100% - 352px);
-        margin-right: 4.75em;
+        @include small-tablet {
+          width: calc(150% - 352px);
+        }
         &-p {
             margin-top: 5.3em;
             margin-bottom: 1.3em;
@@ -64,18 +69,23 @@
 
         &__text {
             margin-bottom: 6em;
-        }
+            @include small-tablet {
+              margin-bottom: 3em;
+            }
+      }
     }
 
     &__btn {
-
-        &__join-now {
-            padding: 0.85em 1.14em;
-            border: 2px solid var(--neutrals-4);
-            border-radius: 90px;
-            color: var(--neutrals-8);
-            cursor: pointer;
-        }
+      @include small-tablet {
+        margin-bottom: 2em;
+      }
+      &__join-now {
+          padding: 0.85em 1.14em;
+          border: 2px solid var(--neutrals-4);
+          border-radius: 90px;
+          color: var(--neutrals-8);
+          cursor: pointer;
+      }
     }
 
     &__pic {

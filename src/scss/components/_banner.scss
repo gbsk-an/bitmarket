@@ -10,6 +10,7 @@
         grid-column: 1 / 7;
         margin-top: 10em;
         margin-bottom: 14em;
+        z-index: 1;
     }
 
     &__title {
@@ -32,7 +33,7 @@
       position: absolute;
       transform: translateY(0);
       right: calc(50% - 700px);
-      z-index: 1;
+      z-index: 0;
     }
 
     &__img {
@@ -47,51 +48,56 @@
     border-radius: 24px;
     background-color: var(--neutrals-2);
 
-.blocks-hh {
+  .blocks-hh {
     grid-column: 3 span;
-    margin: 24px;
+    margin: 1.5em;
     padding: 2em 3.75em 2em 2em;
-}
 
-    .blocks-hh:hover {
-        background-color: var(--neutrals-3);
-        box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
-        border-radius: 16px;
-        transition: 0.2s;
+    @include small-tablet {
+      margin: 1em;
+      padding: .8em;
     }
+  }
 
-    .coin-symbol {
-        margin-bottom: 1em;
-    }
+  .blocks-hh:hover {
+      background-color: var(--neutrals-3);
+      border-radius: 16px;
+      transition: 0.2s;
+  }
 
-    &__coin-rate {
-        @include flex-all-sb;
+  .coin-symbol {
+      margin-bottom: 1em;
+  }
 
-        max-width: 131px;
-        margin: 0 0 0.5em;
-    }
-    &__coin {
-        margin: 0;
-        font-family: var(--font-family-Poppins-SB);
-    }
-    &__rate,
-    &__rate-btc {
-        margin: 0;
-        max-width: 58px;
-        padding: 0.16em 0.3em;
-        border-radius: 24px;
-        background-color: var(--primary-4);
-        color: var(--neutrals-8);
-        font-family: var(--font-family-Poppins-SB);
-        font-size: 12px;
-    }
-    &__rate-btc {
-        background-color: var(--primary-3);
-    }
-    &__price{
-        margin-bottom: 4px;
-    }
-    &__price-little{
-        color: var(--neutrals-8);
-    }
+  &__coin-rate {
+      @include flex-all-sb;
+
+      max-width: 131px;
+      margin: 0 0 0.5em;
+  }
+  &__coin {
+      margin: 0;
+      font-family: var(--font-family-Poppins-SB);
+  }
+  &__rate,
+  &__rate-btc {
+      margin: 0;
+      max-width: 58px;
+      padding: 0.16em 0.3em;
+      border-radius: 24px;
+      background-color: var(--primary-4);
+      color: var(--neutrals-8);
+      font-family: var(--font-family-Poppins-SB);
+      font-size: 12px;
+  }
+  &__rate-btc {
+      background-color: var(--primary-3);
+
+  }
+  &__price{
+      margin-bottom: 4px;
+  }
+  &__price-little{
+      color: var(--neutrals-8);
+  }
 }

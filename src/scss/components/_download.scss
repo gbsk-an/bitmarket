@@ -6,9 +6,15 @@
     @include grid;
 
     margin-bottom: 2.75em;
+    @include small-tablet {
+      margin-bottom: 0;
+    }
     &__block {
         grid-column: 1 / 6;
         margin-top: 12em;
+        @include small-tablet {
+          grid-column: 6 span;
+        }
     }
 
     &__title {

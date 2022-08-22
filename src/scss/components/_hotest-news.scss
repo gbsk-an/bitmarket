@@ -7,8 +7,11 @@
 
 
     &__navigation {
-        grid-column: 4 span;
+        grid-column: 5 span;
         margin-bottom: 5em;
+        @include small-tablet {
+          margin-bottom: 2em;
+        }
     }
 
     &__nav {
@@ -27,9 +30,8 @@
     }
 
     &__btn {
-      grid-column: 11 / span 3;
-      margin-left: 3.3em;
-
+      grid-column: -1 /span 2;
+      margin-top: 2em;
         &__view-more {
             @include btn-clear;
             padding: 1em 1.5em;
@@ -78,8 +80,11 @@
     }
 
     &__mini {
-        grid-column: span 6 / 13;
-        margin-left: 5em;
+        grid-column: -6 / span 6;
+
+        @include small-tablet {
+          display: none;
+        }
     }
     &__post-flex {
         display: flex;
