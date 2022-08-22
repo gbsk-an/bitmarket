@@ -12,13 +12,18 @@
 }
 
 .logo {
+  @include flex-v-center;
+
+  &__link {
     @include flex-v-center;
 
-    &__title {
-        padding-left: 0.3em;
+    &-title {
+        padding-left: 0.4em;
         color: var(--neutrals-7);
     }
+  }
 }
+
 
 .nav {
 

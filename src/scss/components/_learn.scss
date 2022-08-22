@@ -1,0 +1,188 @@
+.learn-page {
+  background-color: var(--neutrals-1);
+  position: relative;
+}
+
+.learn {
+  @include grid;
+  margin-bottom: 2em;
+  &__content {
+    grid-column: 1 / 7;
+    margin-top: 10em;
+    margin-bottom: 11em;
+  }
+
+  &__title {
+      margin-bottom: 0.3em;
+  }
+
+  &__btn {
+    margin-top: 3em;
+
+      &__start-now {
+      @include blue-btn;
+
+      width: 174px;
+      height: 48px;
+      padding: 1em 1.5em;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    transform: translateY(0);
+    right: calc(50% - 700px);
+    z-index: 1;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.left-column {
+  grid-column: span 7;
+  padding-top: 2em;
+
+  .featured-section {
+
+    &__title {
+      margin-bottom: 1.2em;
+    }
+    &__picture {
+      margin-bottom: .9em;
+    }
+    &__content {
+
+      &-link {
+        color: var(--neutrals-8);
+      }
+      &-text {
+        margin-bottom: 1.4em;
+      }
+      &-meta {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        opacity: 70%;
+      }
+    }
+  }
+}
+
+.right-column {
+  grid-column: 8 / span 5;
+  padding-top: 2em;
+
+  .popular-section {
+    padding-bottom: 4em;
+
+    &__title {
+      margin-bottom: 1.2em;
+    }
+
+    &__item {
+      transition: 0.6s;
+      &:hover {
+        padding: 1em 1.8em;
+        background-color: var(--neutrals-3);
+        border-radius: 100px;
+        color: var(--neutrals-8);
+        transition: 0.4s;
+      }
+      &:not(:last-child) {
+        margin-bottom: 2em;
+      }
+    }
+
+    &__link {
+      color: var(--neutrals-8);
+    }
+  }
+
+  .new-section {
+    padding-bottom: 3em;
+
+    &__title {
+      margin-bottom: 1.2em;
+    }
+
+    &__item {
+      transition: 0.6s;
+      &:hover {
+        padding: 1em 1.8em;
+        background-color: var(--neutrals-3);
+        border-radius: 100px;
+        color: var(--neutrals-8);
+        transition: 0.4s;
+      }
+      &:not(:last-child) {
+        margin-bottom: 2em;
+      }
+    }
+
+    &__link {
+      color: var(--neutrals-8);
+    }
+  }
+}
+.start-here-block {
+  @include flex-all-sb;
+
+  padding: 1em;
+  border-radius: 90px;
+  background-color: var(--primary-1);
+
+  &__h3,
+  &__btn {
+    padding: 0 1.9em;
+    color: var(--neutrals-8);
+  }
+  &__btn {
+    transition: .6s;
+    &:hover {
+      color: var(--neutrals-1);
+      transition: .3s;
+    }
+  }
+}
+
+.crypto-insights,
+.technical-analysis {
+  @include grid;
+
+
+  margin-top: 5em;
+  &__item {
+    grid-column: span 3;
+  }
+  &__description {
+    margin-top: 1.4em;
+    margin-bottom: 3em;
+  }
+  &__link {
+    position: relative;
+    color: var(--neutrals-8);
+  }
+
+  &__link::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    background-image: url('../img/svg/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 160px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+  &__pic {
+    margin-bottom: 1em;
+  }
+  &__meta {
+    margin-top: .85em;
+  }
+}
+
+
