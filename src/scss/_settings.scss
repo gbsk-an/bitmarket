@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  overflow: hidden;
+}
+
 .h1 {
   margin: 0;
   color: var(--neutrals-8);

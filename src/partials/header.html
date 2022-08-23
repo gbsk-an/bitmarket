@@ -7,29 +7,31 @@
                 <h4 class="logo__link-title h4">BitMarket</h4>
               </a>
             </div>
-            <nav class="nav">
-                <ul class="nav__list list-reset">
-                    <li class="nav__item"><a href="#Exchange" class="nav__link p-14-bold">Exchange</a></li>
-                    <li class="nav__item nav__item_buyCripto">
-                        <span class="nav__link p-14-bold">Buy Crypto</span>
-                        <ul class="nav__sub-menu list-reset">
-                            <li><a class="nav__sub-menu__item p-14-bold" href="#">Credit card</a></li>
-                            <li><a class="nav__sub-menu__item p-14-bold" href="#">Bank deposit</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__item"><a href="#market-trend" class="nav__link p-14-bold">Market</a></li>
-                    <li class="nav__item"><a href="learn.html" class="nav__link p-14-bold">Learn</a></li>
-                </ul>
-            </nav>
-            <div class="menu-buttons">
-                <div class="menu-buttons__language">
-                    <button type="button" class="menu-buttons__btn-lang-rate p-bold-8 btn-reset">EN/USD</button>
-                </div>
-                <div class="menu-buttons__sign-up-login">
-                    <a href="sign-up.html" class="sign-up p-14-bold">Sign up</a>
-                    <a href="login.html" class="login p-14-bold">Login</a>
-                </div>
+            <div class="data-menu" data-menu>
+              <nav class="nav">
+                  <ul class="nav__list list-reset">
+                      <li class="nav__item" data-menu-item><a href="#Exchange" class="nav__link p-14-bold">Exchange</a></li>
+                      <li class="nav__item" data-menu-item><a href="#buy-cripto" class="nav__link p-14-bold">Buy Cripto</a></li>
+                      <li class="nav__item" data-menu-item><a href="#market-trend" class="nav__link p-14-bold">Market</a></li>
+                      <li class="nav__item" data-menu-item><a href="learn.html" class="nav__link p-14-bold">Learn</a></li>
+                  </ul>
+                  <button class="btn-reset burger-close" aria-label="Закрыть меню" data-menu-close></button>
+              </nav>
+              <div class="menu-buttons" data-menu-item>
+                  <div class="menu-buttons__language">
+                      <button type="button" class="menu-buttons__btn-lang-rate p-bold-8 btn-reset">EN/USD</button>
+                  </div>
+                  <div class="menu-buttons__sign-up-login">
+                      <a href="sign-up.html" class="sign-up p-14-bold">Sign up</a>
+                      <a href="login.html" class="login p-14-bold">Login</a>
+                  </div>
+              </div>
             </div>
+            <button class="burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
         </div>
     </div>
 </header>

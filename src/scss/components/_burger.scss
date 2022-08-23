@@ -1,0 +1,62 @@
+.burger {
+  @include for-desktop {
+    display: none;
+  }
+  @include big-desktop {
+    display: none;
+  }
+  @include small-tablet {
+    display: block;
+    margin-right: 1em;
+  }
+  position: relative;
+  border: 1px solid var(--neutrals-4);
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+
+  &__line {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 100px;
+    width: 26px;
+    height: 2px;
+    background-color: var(--neutrals-8);
+    transform: translateX(-50%) translateY(-50%);
+
+    &:first-child {
+      margin-top: -7px;
+    }
+
+    &:last-child {
+      left: 9px;
+      margin-top: 7px;
+      width: 13px;
+      transform: translateY(-50%);
+    }
+  }
+}
+.burger-close {
+  position: absolute;
+  right: 3em;
+  top: 3em;
+  border: 1px solid var(--neutrals-4);
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/svg/close.svg");
+  background-position: center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+
+  @include for-desktop {
+    display: none;
+  }
+  @include big-desktop {
+    display: none;
+  }
+  @include small-tablet {
+    display: block;
+  }
+}
