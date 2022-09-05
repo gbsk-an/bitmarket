@@ -1,74 +1,63 @@
-.how-it-work-page {
-  padding-top: $padding-section-top;
+.how-it-work {
   background-color: var(--neutrals-1);
 }
-.how-it-work {
-    @include grid;
+.hiw {
+  @include grid;
 
-    &__title {
-        grid-column: 4 / 10;
-        margin-bottom: 5em;
-        text-align: center;
-        @include small-tablet {
-          grid-column: span 6;
-        }
-        &-h2 {
-            margin-bottom: 0.42em;
-        }
-        &-p {
-            color: var(--neutrals-6);
-        }
+  &__text {
+    grid-column: 4 / 10;
+    margin-bottom: 5em;
+    text-align: center;
+    @include small-tablet {
+      grid-column: span 6;
+    }
+    &--title {
+      margin-bottom: 0.42em;
+    }
+    &--description {
+      color: var(--neutrals-6);
+    }
+  }
+
+  &__block {
+    grid-column: 1 / 13;
+    margin-bottom: 5em;
+
+    &--el:first-child {
+      margin-left: 3.5em;
     }
 
-    &__blocks {
-        grid-column: 1 / 13;
-        margin-bottom: 5em;
-        @include small-tablet {
-          grid-column: span 6;
-        }
+    &--el:last-child {
+      margin-right: 3.5em;
     }
 
-    &__blocks-flex {
-        @include flex-all-sb;
+    @include small-tablet {
+      grid-column: span 6;
+    }
+  }
+
+  &__steps {
+    grid-column: 1 / 13;
+    @include small-tablet {
+      grid-column: span 6;
+    }
+  }
+
+  &__step {
+    text-align: center;
+    &:not(:last-child) {
+      margin-right: 2em;
+    }
+    &--number {
+      margin-bottom: 2.67em;
     }
 
-    &__element:first-child {
-        margin-left: 3.5em;
+    &--title {
+      margin-bottom: 1em;
     }
 
-    &__element:last-child {
-        margin-right: 3.5em;
+    &__description {
+      color: var(--neutrals-7);
     }
-    &__steps {
-        grid-column: 1 / 13;
-        @include small-tablet {
-          grid-column: span 6;
-        }
-    }
-    &__steps-flex {
-        @include flex-all-sb;
-    }
-
-    &__step {
-        text-align: center;
-        &:not(:last-child) {
-            margin-right: 2em;
-        }
-        &__p {
-            margin-bottom: 2.67em;
-            font-family: var(--font-family-Poppins-SB);
-            color: var(--neutrals-4);
-            font-size: 12px;
-            line-height: 20px;
-        }
-
-        &__title {
-            margin-bottom: 1em;
-        }
-
-        &__description {
-            color: var(--neutrals-7);
-        }
-    }
-
+  }
 }

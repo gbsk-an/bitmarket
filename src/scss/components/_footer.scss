@@ -1,114 +1,110 @@
-#footer {
+.footer-bg {
   border-top: 1px solid var(--neutrals-3);
   background-color: var(--neutrals-1);
 }
 .wrapper-footer {
   margin: 0 auto;
   max-width: 1120px;
-
 }
 .footer {
-    @include flex-sb;
+  @include flex-sb;
+  @include small-tablet {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2em 0 0 2em;
+  }
+
+  &__blocks {
+    padding-top: 5em;
+    padding-bottom: 2.7em;
     @include small-tablet {
-      flex-direction: column;
-      flex-wrap: wrap;
-      padding: 2em 0 0 2em;
+      padding: 0;
     }
+  }
 
-
-    &__blocks {
-        padding-top: 5em;
-        padding-bottom: 2.7em;
-        @include small-tablet {
-          padding: 0;
-        }
+  &__block-1 {
+    display: flex;
+    flex: 0 0 39%;
+    padding-left: 0;
+    @include small-tablet {
+      flex: 0;
+      padding: 0 0 2em;
     }
+  }
 
-    &__block-1 {
-        display: flex;
-        flex: 0 0 39%;
-        padding-left: 0;
-        @include small-tablet {
-          flex: 0;
-          padding: 0 0 2em;
-        }
+  &__block-2 {
+    padding-right: 5em;
+    padding-left: 5em;
+    border-left: 1px solid var(--neutrals-2);
+    @include small-tablet {
+      padding: 0 0 2em;
+      border: none;
     }
+  }
 
-    &__block-2 {
-        padding-right: 5em;
-        padding-left: 5em;
-        border-left: 1px solid var(--neutrals-2);
-        @include small-tablet {
-          padding: 0 0 2em;
-          border: none;
-        }
+  &__block-3 {
+    padding-left: 5.375em;
+    border-left: 1px solid var(--neutrals-2);
+    @include small-tablet {
+      padding: 0 0 2em;
+      border: none;
     }
+  }
 
-    &__block-3 {
-        padding-left: 5.375em;
-        border-left: 1px solid var(--neutrals-2);
-        @include small-tablet {
-          padding: 0 0 2em;
-          border: none;
-        }
+  &__logo__link {
+    display: inline-block;
+    overflow: hidden;
+    width: 32px;
+    margin-right: 10em;
+    @include small-tablet {
+      display: none;
     }
-
-    &__logo__link {
-        display: inline-block;
-        overflow: hidden;
-        width: 32px;
-        margin-right: 10em;
-        @include small-tablet {
-          display: none;
-        }
+  }
+  &__nav {
+    &--item {
+      &:not(:last-child) {
+        padding-bottom: 1.5em;
+      }
     }
+  }
+  &__contact,
+  &__newsletter {
+    margin-bottom: 3.4em;
+    color: var(--neutrals-6);
+    text-transform: uppercase;
+    font-family: var(--font-family-Poppins-SB);
+    font-size: 12px;
+    line-height: 12px;
+  }
 
-    &__item {
-        &:not(:last-child) {
-            padding-bottom: 1.5em;
-        }
+  &__subscribe {
+    color: var(--neutrals-6);
+  }
+
+  &__input {
+    position: relative;
+    margin-top: 1.25em;
+    padding: 0.875em 3.625em 0.875em 1em;
+    border: 2px solid var(--neutrals-2);
+    border-radius: 90px;
+
+    &--email {
+      width: 100%;
+      border: none;
+      background-color: var(--neutrals-1);
     }
-
-    &__title {
-        margin-bottom: 3.4em;
-        color: var(--neutrals-6);
-        text-transform: uppercase;
-        font-family: var(--font-family-Poppins-SB);
-        font-size: 12px;
-        line-height: 12px;
+    &--btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      bottom: 8px;
+      width: 32px;
+      height: 32px;
     }
-
-    &__subscribe {
-        color: var(--neutrals-6);
+    @include small-tablet {
+      max-width: 450px;
     }
-
-    &__email-input {
-        position: relative;
-        margin-top: 1.25em;
-        padding: 0.875em 3.625em 0.875em 1em;
-        border: 2px solid var(--neutrals-2);
-        border-radius: 90px;
-
-        @include small-tablet {
-          max-width: 450px;
-        }
-    }
-
-    &__email {
-        width: 100%;
-        border: none;
-        background-color: var(--neutrals-1);
-    }
-
-
-    &__btn {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        bottom: 8px;
-        width: 32px;
-        height: 32px;
-    }
+  }
 }
 
 .bottom-bar-border {
@@ -116,26 +112,16 @@
 }
 
 .bottom-bar {
-    @include flex-all-sb;
+  @include flex-all-sb;
 
-    max-width: 1120px;
-    margin: 0 auto;
-    padding-top: 1.6em;
-    padding-bottom: 1.4em;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-top: 1.6em;
+  padding-bottom: 1.4em;
 
-
-    &__copyright {
-      &__p {
-          font-family: var(--font-family-Poppins-Reg);
-          color: var(--neutrals-4);
-          font-size: 12px;
-          line-height: 20px;
-      }
+  &__socials {
+    &--icon:not(:last-child) {
+      margin-right: 1.2em;
     }
-
-    &__icon:not(:last-child) {
-        margin-right: 1.2em;
-    }
+  }
 }
-
-

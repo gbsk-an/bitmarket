@@ -1,50 +1,50 @@
 .trade-anywhere {
-    position: relative;
-    background-color: var(--neutrals-1);
+  position: relative;
+  background-color: var(--neutrals-1);
 }
 .download {
-    @include grid;
+  @include grid;
 
-    margin-bottom: 2.75em;
+  margin-bottom: 2.75em;
+  @include small-tablet {
+    margin-bottom: 0;
+  }
+  &__block {
+    grid-column: 1 / 6;
+    margin-top: 12em;
+
+    &--text {
+      margin-bottom: 4em;
+
+      &-description {
+        margin-top: 1em;
+      }
+    }
     @include small-tablet {
-      margin-bottom: 0;
+      grid-column: 6 span;
     }
-    &__block {
-        grid-column: 1 / 6;
-        margin-top: 12em;
-        @include small-tablet {
-          grid-column: 6 span;
-        }
-    }
+  }
 
-    &__title {
-        margin-bottom: 4em;
+  &__store {
+    @include flex-v-center;
 
-        &-p {
-            margin-top: 1em;
-        }
+    padding: 2em 0 2em 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--neutrals-3);
     }
-    &__store {
-        @include flex-v-center;
+  }
+  &__app-icon {
+    margin-right: 1.5em;
+  }
+  &__app {
+    font-family: var(--font-family-Poppins-Reg);
+  }
 
-        padding: 2em 0 2em 0;
-        &:not(:last-child) {
-                border-bottom: 1px solid var(--neutrals-3);
-            }
-    }
-    &__app-icon {
-        margin-right: 1.5em;
-    }
-    &__app {
-        font-family: var(--font-family-Poppins-Reg);
-    }
-
-    &__bg {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: calc(50% - 800px);
-        z-index: 1;
-    }
-
+  &__bg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(50% - 800px);
+    z-index: 1;
+  }
 }
