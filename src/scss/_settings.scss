@@ -118,6 +118,10 @@ p {
   }
 }
 
+.pt-section {
+  padding-top: $padding-section-top;
+}
+
 .flex-sb {
   @include flex-sb;
 }

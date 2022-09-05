@@ -77,3 +77,15 @@
     transform: translateY(-50%);
   }
 }
+
+.btn__trade {
+  @include btn-clear;
+
+  padding: 0.75em 1em;
+}
+
+.btn__contact-us {
+  @include blue-btn;
+
+  padding: 1em 1.5em;
+}
