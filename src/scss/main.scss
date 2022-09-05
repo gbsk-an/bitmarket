@@ -8,6 +8,7 @@
 @import "./components/burger";
 @import "./components/header";
 @import "./components/banner";
+@import "./components/course-now";
 @import "./components/hotest-news";
 @import "./components/market-trend";
 @import "./components/become-trader";
@@ -24,3 +25,7 @@
 
 // подключения одностраничных компонентов
 @import "./components/learn";
+
+
+//подключение UI
+@import "./components/btns"
