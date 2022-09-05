@@ -52,3 +52,9 @@
         box-shadow: 0 0 0 2px var(---neutrals-3) inset;
       }
 }
+
+.btn__view-more {
+  @include btn-clear;
+
+    padding: 1em 1.5em;
+}
