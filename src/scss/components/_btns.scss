@@ -27,34 +27,53 @@
 .btn__sign-up {
   @include blue-btn;
 
-      margin-right: .5em;
-      padding: 0.8em 1.1em;
+  margin-right: .5em;
+  padding: 0.8em 1.1em;
 
-      @include small-tablet {
-        margin: 0 1em;
-        flex-basis: calc(50% - 2em);
-      }
+  @include small-tablet {
+    margin: 0 1em;
+    flex-basis: calc(50% - 2em);
+  }
 }
 
 .btn__login {
   padding: 0.8em 1.1em;
-      border-radius: 90px;
-      border: 2px solid var(--neutrals-4);
-      color: var(--neutrals-8);
+  border-radius: 90px;
+  border: 2px solid var(--neutrals-4);
+  color: var(--neutrals-8);
 
-      @include small-tablet {
-        margin: 0 1em;
-        flex-basis: calc(50% - 2em);
-      }
+  &:hover {
+    background-color: var(--neutrals-3);
+    box-shadow: 0 0 0 2px var(---neutrals-3) inset;
+  }
 
-      &:hover {
-        background-color: var(--neutrals-3);
-        box-shadow: 0 0 0 2px var(---neutrals-3) inset;
-      }
+  @include small-tablet {
+    margin: 0 1em;
+    flex-basis: calc(50% - 2em);
+  }
 }
 
 .btn__view-more {
   @include btn-clear;
 
-    padding: 1em 1.5em;
+  padding: 1em 1.5em;
+}
+
+.btn__learn-more {
+  @include btn-clear;
+  position: relative;
+  padding: 0.8125em 3.25em 0.8125em 1.5em;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/svg/arrow-right-simple.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

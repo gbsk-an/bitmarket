@@ -118,6 +118,13 @@ p {
   }
 }
 
+.flex-sb {
+  @include flex-sb;
+}
+.flex-sb-center {
+  @include flex-all-sb;
+}
+
 .page {
   height: 100%;
   -webkit-text-size-adjust: 100%;
