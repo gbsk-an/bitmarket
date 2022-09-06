@@ -120,7 +120,7 @@ $padding-section-bottom: 8.5em;
   border-radius: 90px;
   background-color: var(--primary-1);
   color: var(--neutrals-8);
-  font-family: var(--font-family-DMSans);
+  font-family: var(--DMSans);
   transition: all .3s;
 
   &:hover {
@@ -132,7 +132,7 @@ $padding-section-bottom: 8.5em;
   border: 2px solid #26282E;
   border-radius: 90px;
   color: var(--neutrals-8);
-  font-family: var(--font-family-DMSans);
+  font-family: var(--DMSans);
   font-size: 16px;
   transition: all .3s;
 

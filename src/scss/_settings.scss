@@ -12,7 +12,7 @@ h1 {
   margin: 0;
   color: var(--neutrals-8);
   font-size: 64px;
-  font-family: var(--font-family-DMSans);
+  font-family: var(--DMSans);
   font-weight: 700;
   line-height: 64px;
   @include small-tablet {
@@ -23,7 +23,7 @@ h2 {
   margin: 0;
   color: var(--neutrals-8);
   font-size: 48px;
-  font-family: var(--font-family-DMSans);
+  font-family: var(--DMSans);
   font-weight: 700;
   line-height: 56px;
   @include small-tablet {
@@ -35,7 +35,7 @@ h3 {
   margin: 0;
   color: var(--neutrals-8);
   font-size: 32px;
-  font-family: var(--font-family-DMSans);
+  font-family: var(--DMSans);
   font-weight: 700;
   line-height: 40px;
   @include small-tablet {
@@ -47,7 +47,7 @@ h4 {
   margin: 0;
   color: var(--neutrals-8);
   font-size: 24px;
-  font-family: var(--font-family-Poppins-SB);
+  font-family: var(--Poppins-SB);
   font-weight: 400;
   line-height: 32px;
   @include small-tablet {
@@ -59,7 +59,7 @@ p {
   margin: 0;
   color: var(--neutrals-4);
   font-size: 16px;
-  font-family: var(--font-family-Poppins-Reg);
+  font-family: var(--Poppins-Reg);
   font-weight: 400;
   line-height: 24px;
 }
@@ -68,7 +68,7 @@ p {
   margin: 0;
   color: var(--neutrals-4);
   font-size: 14px;
-  font-family: var(--font-family-Poppins-Reg);
+  font-family: var(--Poppins-Reg);
   font-weight: 400;
   line-height: 24px;
 }
@@ -77,7 +77,7 @@ p {
   margin: 0;
   color: var(--neutrals-8);
   font-size: 16px;
-  font-family: var(--font-family-Poppins-SB);
+  font-family: var(--Poppins-SB);
   line-height: 24px;
 }
 
@@ -85,16 +85,25 @@ p {
   margin: 0 auto;
   color: var(--neutrals-4);
   font-size: 14px;
-  font-family: var(--font-family-DMSans);
+  font-family: var(--DMSans);
   font-weight: 700;
   line-height: 16px;
+}
+
+.p-16-bold {
+  margin: 0 auto;
+  color: var(--neutrals-4);
+  font-size: 16px;
+  font-family: var(--DMSans);
+  font-weight: 700;
+  line-height: 18px;
 }
 
 .p-bold-8 {
   margin: 0 auto;
   color: var(--neutrals-8);
   font-size: 16px;
-  font-family: var(--font-family-DMSans);
+  font-family: var(--DMSans);
   font-weight: 700;
   line-height: 16px;
 }
@@ -104,7 +113,7 @@ p {
   margin: 0 auto;
   color: var(--neutrals-4);
   font-size: 12px;
-  font-family: var(--font-family-Poppins-Reg);
+  font-family: var(--Poppins-Reg);
   font-weight: 400;
   line-height: 20px;
 }

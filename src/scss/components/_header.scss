@@ -52,14 +52,14 @@
     @include small-tablet {
       width: 100%;
       display: flex;
-      margin: auto .8em 0;
+      margin: auto 0.8em 0;
     }
 
     &--authorization {
       @include small-tablet {
         display: flex;
         flex-direction: row;
-        width: 100%
+        width: 100%;
       }
     }
 
@@ -101,19 +101,18 @@
       }
     }
 
-    &:hover>.nav__sub-menu {
+    &:hover > .nav__sub-menu {
       display: inherit;
     }
 
     @include small-tablet {
       padding: 0 1.8em;
-      transition: .3s;
+      transition: 0.3s;
       border: 3px solid transparent;
 
       &:hover {
-
         border-left: 3px solid var(--primary-1);
-        transition: .3s;
+        transition: 0.3s;
       }
     }
   }
@@ -123,11 +122,101 @@
       color: var(--neutrals-4);
       font-size: 32px;
       line-height: 40px;
-      transition: .3s;
+      transition: 0.3s;
 
       &:hover {
         color: var(--neutrals-8);
-        transition: .3s;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+.buy-cripto {
+  position: relative;
+  padding-right: 1.3em;
+  cursor: pointer;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/svg/arrow-down-simple-line.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__subnav {
+    position: absolute;
+    top: calc(100% + 0.3em);
+    left: 50%;
+    width: 250px;
+    transform: translate(-50%, .6em);
+    padding: 0 1em;
+    box-shadow: var(--box-shadow);
+    border-radius: 12px;
+    background: var(--neutrals-3);
+    z-index: 100;
+    @include small-tablet {
+      position: relative;
+      padding: 0 3em;
+      margin-bottom: 2em;
+      box-shadow: none;
+      border-radius: 0;
+      background: none;
+      top: 0;
+      left: 0;
+      width: fit-content;
+      transform: none;
+    }
+    &--link{
+      transition: 0.3s;
+      &:hover {
+        color: var(--neutrals-8);
+        transition: 0.3s;
+      }
+      @include small-tablet {
+        font-size: 24px;
+      }
+    }
+    &--el {
+      padding: 1em 0 1em 1.6em;
+      &:first-child {
+        position: relative;
+        border-bottom: 1px solid var(--neutrals-4);
+        &::before {
+          content: "";
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          background-image: url("../img/svg/credit-card.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        @include small-tablet {
+          border-bottom: none;
+        }
+      }
+      &:last-child {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          background-image: url("../img/svg/user-avatar.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
   }

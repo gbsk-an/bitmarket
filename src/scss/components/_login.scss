@@ -16,7 +16,7 @@
         padding-left: 0.4em;
         color: var(--neutrals-2);
         font-size: 18px;
-        font-family: var(--font-family-Poppins-SB);
+        font-family: var(--Poppins-SB);
       }
     }
   }
@@ -58,7 +58,7 @@
   &__url {
     position: relative;
     color: var(--neutrals-2);
-    font-family: var(--font-family-DMSans);
+    font-family: var(--DMSans);
     font-size: 20px;
     &::before {
       content: "";
