@@ -1,0 +1,11 @@
+.profile {
+  @include grid;
+
+  &-sidebar {
+    grid-column: span 3;
+    &__flex {
+      @include flex-all-center;
+      flex-direction: column;
+    }
+  }
+}

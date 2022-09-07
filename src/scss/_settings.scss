@@ -127,6 +127,17 @@ p {
   }
 }
 
+.bg-dark {
+  background-color: var(--neutrals-1);
+}
+.bg-ultra-dark {
+  background-color: var(--shade-2-30);
+}
+
+.bg-light {
+  background-color: var(--neutrals-7);
+}
+
 .pt-section {
   padding-top: $padding-section-top;
 }

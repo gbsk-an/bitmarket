@@ -1,7 +1,6 @@
 .header {
   width: 100%;
   padding: 1.25em 5em;
-  background-color: var(--neutrals-1);
   border-bottom: 1px solid var(--neutrals-2);
 
   @include small-tablet {
